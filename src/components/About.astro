@@ -1,0 +1,51 @@
+---
+import backgroundImage from "../images/background.webp";
+import makewebMMImage from "../images/MakeWeb_MM.svg";
+import makewebMWImage from "../images/MakeWeb_MW.svg";
+import universeImage from "../images/universe.webp";
+---
+
+<section class="flex flex-col bg-[url('../images/background.webp')] bg-fixed bg-cover text-(--color-background) align-text-top h-screen w-full items-center p-24 xl:p-36 justify-center">
+    <div class="flex flex-col items-center justify-center text-center">
+        <p class="text-xs text-(--color-primary) md:text-sm xl:text-base 2xl:text-lg font-light tracking-[0.5em]">
+            ¬Nosotros 
+        </p>
+        <h1 class="text-xl lg:text-3xl xl:text-6xl z-1 font-bold underline decoration-(--color-background) decoration-2 underline-offset-4 mb-2 md:mb-4">
+            En makeweb te llevamos al espacio
+        </h1>
+    </div>
+    <div class="flex h-full md:h-screen space-x-0 md:space-x-5 items-center justify-center w-full">
+        <div class="flex items-center justify-center">
+            <div class="absolute bg-(--color-accent) rounded-full shadow-lg w-64 xl:w-80 h-64 xl:h-80 object-cover">
+                
+            </div>
+            <div class="relative flex flex-col items-center justify-center w-64 xl:w-80 h-64 xl:h-80 object-cover">
+                <img class="rounded-full shadow-lg w-48 xl:w-60 h-48 xl:h-60" src={makewebMMImage.src} alt="Main"/>
+                <img class="-mt-5 shadow-lg" src={makewebMWImage.src} alt="Main"/>
+            </div>
+        </div>
+
+        <div class="-mt-14 md:mt-0 ">
+            <h2 class="text-xs md:text-sm xl:text-base 2xl:text-2xl pb-2 md:pb-0 font-light leading-relaxed">
+                Somos una agencia de marketing digital especializada en llevar tu marca al siguiente nivel. Con un enfoque innovador y creativo, nos dedicamos a crear estrategias personalizadas que conecten con tu audiencia y generen resultados tangibles.
+            </h2>
+
+            
+            
+            <div class="grid grid-cols-3 text-xs md:text-sm xl:text-base 2xl:text-2xl mt-5 md:flex-row">
+                <div class="flex font-bold">
+                   <a href="mailto:info@makeweb.com">info@makeweb.com</a> 
+                </div>
+                <div class="flex justify-start md:justify-center  font-bold">
+                   <a href="tel:+1234567890">+1 234 567 890</a>
+                </div>
+                <div class="flex justify-start md:justify-end font-bold">
+                    <a href="https://goo.gl/maps/yourlocation" target="_blank">Calle Falsa 123, Ciudad</a>
+                </div>
+            </div>
+            
+        </div> 
+        
+    </div>
+</section>
+
