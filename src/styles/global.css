@@ -10,8 +10,8 @@
 
 :root {
     --color-primary: #f7333f; 
-    --color-background: #f4f6f8;
-    --color-accent: #1f2937;
+    --color-background: #1f2937;
+    --color-accent: #f4f6f8;
 }
 
 html {

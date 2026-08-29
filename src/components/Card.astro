@@ -8,6 +8,23 @@ interface Props {
 const { href, title, img } = Astro.props;
 ---
 
-<article class="snap-start relative flex flex-col text-(--color-background) max-w-76 gap-2 md:gap-4 px-3 py-3 bg-(--color-primary) backdrop-blur-md rounded-lg bg-linear-to-b from-white/60 to-white/0">
+<article class="snap-start relative flex flex-col text-(--color-accent) max-w-76 px-3 py-3 bg-(--color-primary) backdrop-blur-md bg-linear-to-b from-white/60 to-white/0">
+	<div class="flex -mt-6 gap-2 justify-center ">
+        <img class="shadow-4xl h-48 xl:h-72 w-80" src={img} alt="Side Image" />
+    </div>
+	
+    <div class="flex text-sm xl:text-base items-center gap-2">
+        <div class="flex justify-start items-center">
+            <h2 class="font-bold">
+                {title}
+            </h2>
+        </div>
 
+        <div class="flex flex-wrap justify-end ml-auto">
+            <a href={href} class="bg-(--color-background) bg-opacity-90 justify-items-center p-1 hover:-translate-y-1 hover:delay-150 hover:scale-110 hover:bg-(--color-background) hover:text-(--color-accent) hover:bg-opacity-100 transition duration-300 flex items-center gap-1">
+                View
+                <span>&rarr;</span>
+            </a>
+        </div>
+    </div>
 </article>
