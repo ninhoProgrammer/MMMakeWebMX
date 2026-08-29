@@ -3,7 +3,7 @@ import makewebMMImage from "../images/MakeWeb_MM.svg";
 ---
 
 <section id="loading-screen" class="fixed inset-0 z-50 flex flex-col items-center justify-center gap-6 bg-(--color-background) text-(--color-accent) transition-opacity duration-1000" role="status" aria-live="polite">
-    <img class="loading-logo mt-10 bg-(--color-accent) rounded-full shadow-lg w-72 h-72" src={makewebMMImage.src} alt="Main"/>
+    <img class="loading-logo mt-10 bg-[url('../images/background.webp')] bg-fixed bg-cover rounded-full shadow-lg w-72 h-72" src={makewebMMImage.src} alt="Main"/>
     <div class="loading-bar h-1 w-32 overflow-hidden rounded-full bg-(--color-accent)/20">
         <div class="h-full w-1/2 bg-(--color-primary)"></div>
     </div>

@@ -1,5 +1,12 @@
-<section class="w-full items-center p-24 xl:p-36 justify-center text-(--color-accent)">
-    <div class="flex gap-4 mb-2 md:mb-4">
+---
+import Card from '../components/Card.astro';
+
+import webDesign from "../images/web-design.webp";
+import invitations from "../images/invitations.webp";
+---
+
+<section class="h-auto w-full items-center p-24 xl:p-36 justify-center text-(--color-accent)">
+    <div class="flex gap-4 mb-2 md:mb-10">
         <div class="flex md:w-1/2 flex-col md:grow text-center md:text-left">
             <p class="text-xs text-(--color-primary) md:text-sm xl:text-base 2xl:text-lg font-light tracking-[0.5em]">
                 ¬servicios  
@@ -14,5 +21,12 @@
         </p>
     </div>
 
-    
+    <div class="flex flex-col md:grid md:grid-cols-3 gap-12 md:gap-8 space-y-4 md:space-y-0">
+        <Card title="Diseño Web" img={webDesign.src} href="/services/web-design" />
+        <Card title="Marketing Digital" img={webDesign.src} href="/services/digital-marketing" />
+        <Card title="SEO y SEM" img={webDesign.src} href="/services/seo-sem" />
+        <Card title="Redes Sociales" img={webDesign.src} href="/services/social-media" />
+        <Card title="Diseño Gráfico" img={webDesign.src} href="/services/branding-design" />
+        <Card title="Invitaciones" img={invitations.src} href="/services/invitations" />
+    </div>
 </section>
