@@ -1,11 +1,11 @@
 ---
 import Logo from './Logo.astro';
 
-const hoverClasses = `hover:text-(--color-accent) hover:bg-(--color-background) hover:underline hover:bg-linear-to-r from-(--color-primary) to-(--color-background) decoration-(--color-accent)' : 'overflow-hidden'}`;
-const hoverClassesMobile = `hover:rounded-lg hover:text-(--color-background) hover:bg-(--color-background) hover:underline hover:bg-linear-to-r from-(--color-primary) to-(--color-background) decoration-(--color-primary)`;
+const hoverClasses = `hover:text-(--color-accent) hover:bg-(--color-secondary) hover:underline hover:bg-linear-to-r from-(--color-primary) to-(--color-secondary) decoration-(--color-accent)' : 'overflow-hidden'}`;
+const hoverClassesMobile = `hover:rounded-lg hover:text-(--color-background) hover:bg-(--color-secondary) hover:underline hover:bg-linear-to-r from-(--color-primary) to-(--color-secondary) decoration-(--color-primary)`;
 ---
 
-<header id="main-header" class="flex shadow-(--color-primary) bg-(--color-background)/60 md:bg-none items-center p-1 w-full fixed top-0 justify-between z-40 text-xs">
+<header id="main-header" class="flex bg-(--color-background)/80 md:bg-none items-center p-1 w-full fixed top-0 justify-between z-40 text-xs">
     <div class="flex grow justify-start pl-5 w-20">
         <a href="/">
           <Logo color1="var(--color-accent)" color2="var(--color-primary)" />
@@ -27,7 +27,7 @@ const hoverClassesMobile = `hover:rounded-lg hover:text-(--color-background) hov
 
     <div id="desktop-menu" class="md:flex grow hidden right-1 justify-end p-1 items-center">
         <ul class="flex [&>li>a]:inline-block [&>li>a]:px-8 [&>li>a]:py-1 shadow-4xl">
-            <li><a class="bg-linear-to-r from-(--color-primary) to-(--color-background) text-(--color-accent) hover:text-(--color-primary) hover:bg-linear-to-r hover:from-(--color-accent) hover:to-(--color-accent) hover:underline decoration-(--color-primary)" href="/contact">Contact</a></li>
+            <li><a class="bg-linear-to-r from-(--color-primary) to-(--color-secondary) text-(--color-accent) hover:text-(--color-primary) hover:bg-linear-to-r hover:from-(--color-accent) hover:to-(--color-accent) hover:underline decoration-(--color-primary)" href="/contact">Contact</a></li>
         </ul>
     </div>
   
@@ -46,14 +46,14 @@ const hoverClassesMobile = `hover:rounded-lg hover:text-(--color-background) hov
     </div>
   
     <!-- Mobile Menu -->
-   <div id="mobile-menu" class="flex absolute top-6 left-0 w-full bg-(--color-accent) rounded-b-lg items-center justify-center text-center shadow-4xl z-30 lg:hidden opacity-0 -translate-y-full pointer-events-none transition-all duration-300 ease-out">
-        <ul class="flex flex-col gap p-2 [&>li>a]:block [&>li>a]:w-32 [&>li>a]:px-6 [&>li>a]:py-3 [&>li>a]:text-center [&>li>a]:rounded-lg [&>li>a]:transition-all [&>li>a]:duration-200 shadow-4xl md:shadow-none rounded-lg ">
+   <div id="mobile-menu" class="flex absolute top-10 left-0 w-full bg-(--color-accent) items-center justify-center text-center shadow-4xl z-30 lg:hidden opacity-0 -translate-y-full pointer-events-none transition-all duration-300 ease-out">
+        <ul class="flex flex-col gap p-2 [&>li>a]:block [&>li>a]:w-32 [&>li>a]:px-6 [&>li>a]:py-3 [&>li>a]:text-center [&>li>a]:transition-all [&>li>a]:duration-200 shadow-4xl md:shadow-none rounded-lg ">
             <li><a class={hoverClassesMobile} href="/">Home</a></li>
             <li><a class={hoverClassesMobile} href="/about">About</a></li>
             <li><a class={hoverClassesMobile} href="/services">Service</a></li>
             <li><a class={hoverClassesMobile} href="/blog">Blog</a></li>
             <hr class="relative flex flex-wrap border-(--color-background) my-1" />
-            <li><a class="bg-linear-to-r from-(--color-primary) to-(--color-background) text-(--color-accent) rounded-lg hover:text-(--color-primary) hover:bg-linear-to-r hover:from-(--color-accent) hover:to-(--color-accent) hover:underline decoration-(--color-primary)" href="/contact">Contact</a></li>
+            <li><a class="bg-linear-to-r from-(--color-primary) to-(--color-secondary) text-(--color-accent) hover:text-(--color-primary) hover:bg-linear-to-r hover:from-(--color-accent) hover:to-(--color-accent) hover:underline decoration-(--color-primary)" href="/contact">Contact</a></li>
         </ul>
     </div>
 </header>
