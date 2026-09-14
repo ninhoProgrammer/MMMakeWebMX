@@ -2,18 +2,23 @@
 import astroFrontImage from "../images/astro-front.webp";
 ---
 
-<section class="sticky top-0 w-screen h-screen inset-x-0 z-10 flex justify-center p-4 pointer-events-none">
-    <img 
+<section class="sticky top-0 z-10 flex h-screen w-screen items-center justify-center p-4 pointer-events-none">
+    <h1 class="hero-text pointer-events-none absolute inset-0 flex items-center justify-center px-40 md:px-60 text-center text-2xl font-bold text-(--color-accent) md:text-4xl">
+        Al infinito y más posicionamiento de marca.
+    </h1>
+
+    <img
         id="heroImage"
         src={astroFrontImage.src}
         alt="Person Image"
-        class="w-full h-full opacity-0 will-change-transform pointer-events-auto transition-all duration-300 ease-out"
+        class="z-10 h-full w-full opacity-0 will-change-transform pointer-events-auto transition-all duration-300 ease-out"
     >
 </section>
 
 <script>
-    const image = document.getElementById('heroImage') as HTMLImageElement
-    const infoSection = document.querySelector<HTMLElement>('.info')
+    const image = document.getElementById('heroImage') as HTMLImageElement | null
+    const textElement = document.querySelector<HTMLElement>('.hero-text')!
+    const infoSection = document.querySelector<HTMLElement>('.info')!
 
     if (image && infoSection) {
         const section = infoSection as HTMLElement
@@ -40,6 +45,10 @@ import astroFrontImage from "../images/astro-front.webp";
             image.style.transform = `translateY(${translateY}px) scale(${scale})`
             image.style.opacity = opacity.toString()
             image.style.visibility = opacity > 0 ? 'visible' : 'hidden'
+
+            textElement.style.transform = `translateY(${translateY}px) scale(${scale})`
+            textElement.style.opacity = opacity.toString()
+            textElement.style.visibility = opacity > 0 ? 'visible' : 'hidden'
         }
 
         updateImage()

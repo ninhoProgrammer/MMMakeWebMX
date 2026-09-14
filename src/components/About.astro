@@ -5,8 +5,8 @@ import makewebMWImage from "../images/MakeWeb_MW.svg";
 import universeImage from "../images/universe.webp";
 ---
 
-<section class="flex flex-col bg-(--color-background) bg-fixed bg-cover text-(--color-accent) align-text-top h-screen w-full items-center p-24 xl:p-36 justify-center">
-    <div class="flex flex-col items-center justify-center text-center">
+<section class="flex flex-col bg-(--color-background) bg-fixed bg-cover text-(--color-accent) align-text-top h-screen w-full items-center p-12 md:p-24 xl:p-36 justify-center">
+    <div class="flex grow flex-col">
         <p class="text-xs text-(--color-primary) md:text-sm xl:text-base 2xl:text-lg font-light tracking-[0.5em]">
             ¬Nosotros 
         </p>
@@ -14,7 +14,7 @@ import universeImage from "../images/universe.webp";
             En makeweb te llevamos al espacio
         </h1>
     </div>
-    <div class="flex h-full md:h-screen space-x-0 md:space-x-5 items-center justify-center w-full">
+    <div class="flex flex-col-reverse md:flex-row h-full md:h-screen space-x-0 md:space-x-5 items-center justify-center w-full">
         <div class="flex items-center justify-center">
             <div class="absolute bg-[url('../images/background.webp')] bg-fixed bg-cover rounded-full shadow-lg w-64 xl:w-80 h-64 xl:h-80 object-cover">
                 
@@ -25,14 +25,12 @@ import universeImage from "../images/universe.webp";
             </div>
         </div>
 
-        <div class="-mt-14 md:mt-0 ">
+        <div class="text-start mb-10 md:mb-0">
             <h2 class="text-xs md:text-sm xl:text-base 2xl:text-2xl pb-2 md:pb-0 font-light leading-relaxed">
                 Somos una agencia de marketing digital especializada en llevar tu marca al siguiente nivel. Con un enfoque innovador y creativo, nos dedicamos a crear estrategias personalizadas que conecten con tu audiencia y generen resultados tangibles.
             </h2>
-
             
-            
-            <div class="grid grid-cols-3 text-xs md:text-sm xl:text-base 2xl:text-2xl mt-5 md:flex-row">
+            <div class="grid grid-cols-1 md:grid-cols-3 text-xs md:text-sm xl:text-base 2xl:text-2xl mt-5 md:flex-row">
                 <div class="flex font-bold">
                    <a href="mailto:info@makeweb.com">info@makeweb.com</a> 
                 </div>
