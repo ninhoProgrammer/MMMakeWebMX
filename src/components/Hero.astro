@@ -5,13 +5,13 @@ import makewebMWImage from "../images/MakeWeb_MW.svg";
 
 ---
 
-<section class="h-auto md:h-screen w-full flex flex-col-reverse md:flex-row items-start justify-center text-start space-x-0 md:space-x-8 md:gap-8 md:overflow-hidden p-12 md:p-24 xl:p-36">
-    <div class="-mt-56 md:mt-0 flex-col md:h-auto md:w-1/2 z-10">
-        <h1 class=" text-(--color-accent) gradient-overlay text-2xl md:text-5xl xl:text-8xl">Deja que tu marca llegue al <span class="underline">espacio</span></h1>
-        <img src={makewebMWImage.src} alt="Astro" class="bg-(--color-background) mt-0 md:mt-4 h-20 md:h-11/12" />
+<section class="h-screen w-full flex flex-col md:flex-row items-start justify-center gap-8 md:gap-12 p-12 md:p-24 xl:p-48 overflow-hidden">
+    <div class="z-10 flex flex-col items-start justify-center"> 
+        <h1 class="text-(--color-accent) gradient-overlay text-3xl sm:text-4xl md:text-5xl xl:text-7xl 2xl:text-8xl leading-tight"> Deja que tu marca llegue al <span class="underline">espacio</span></h1> 
+        <img src={makewebMWImage.src} alt="MakeWeb MW" class="bg-(--color-background) mt-4 w-full max-w-md md:max-w-lg object-contain" /> 
     </div>
-    <div class=" opacity-60 md:opacity-100 items-center justify-center md:justify-end -z-1">
-        <img src={astroImage.src} alt="MakeWeb MW" class="hero-logo h-full w-72 xl:w-96 md:h-11/12 xl:h-screen max-w-xl" />
+    <div class="flex items-center justify-center md:justify-end absolute md:static inset-0 md:inset-auto opacity-30 md:opacity-100">
+        <img src={astroImage.src} alt="Astro" class="hero-logo h-full w-72 xl:w-96 md:h-11/12 xl:h-screen max-w-xl" />
     </div>
 </section>
 
