@@ -1,27 +1,32 @@
 
-<main class="max-w-6xl mx-auto px-10 items-center justify-center h-screen">
+<main class="max-w-6xl mx-auto px-12 md:px-24 items-center justify-center h-screen">
 	
 	<section class="flex flex-col items-center justify-center text-center h-screen space-y-6">
-		<div class="absolute h-auto inset-0 bg-[url('../images/universe.webp')] opacity-90 backdrop-blur-sm shadow-xl animate-fade z-0"></div>
+		<div class="absolute h-screen inset-0 bg-[url('../images/universe.webp')] opacity-90 backdrop-blur-sm shadow-xl animate-fade z-0"></div>
 		<div class="z-10">
 			<h1 class="text-(--color-accent) text-6xl font-black tracking-tighter lg:text-8xl">
-				Build with <span class="text-(--color-primary) underline decoration-(--color-background) decoration-2 underline-offset-4">Purpose</span>.
+				Build with <span class="text-(--color-primary) underline decoration-(--color-secondary) decoration-2 underline-offset-4">Purpose</span>.
 			</h1>
 			<p class="text-xl text-(--color-secondary) max-w-2xl mx-auto leading-relaxed">
 				We're working hard to bring you exciting content. Stay tuned for updates and insights on creativity, imagination, and more!
 			</p>
-			<a href="/contact" class="inline-block px-6 py-3 bg-(--color-primary) text-(--color-background) rounded-lg font-medium hover:bg-(--color-secondary) transition-colors duration-300">
-				Get in Touch
-			</a>
+			<a href="/contact" class="inline-block px-8 py-1 bg-linear-to-r from-(--color-primary) to-(--color-secondary) text-(--color-accent) hover:text-(--color-primary) hover:bg-linear-to-r hover:from-(--color-accent) hover:to-(--color-accent) hover:underline decoration-(--color-primary) shadow-4xl">Contácto</a>
 		</div>
 	</section>
 
-	<section class="grid grid-cols-1 md:grid-cols-2 py-10 gap-16 items-center">
-		<div class="space-y-8">
-			<h2 class="text-4xl font-bold tracking-tight">Technical Overview</h2>
-			<p class="text-(--color-secondary) text-lg leading-relaxed">
-				Using a high-contrast palette and modern frameworks to ensure that content remains the protagonist. Every line of code is optimized for performance and accessibility.
-			</p>
+	<section class="grid grid-cols-1 md:grid-cols-2 py-10 text-(--color-accent) gap-16 items-center">
+		<div class="">
+			<p class="text-xs text-(--color-primary) md:text-sm xl:text-base 2xl:text-lg font-light tracking-[0.5em]">
+                ¬Typography 
+            </p>
+            <h1 class="text-xl lg:text-3xl xl:text-6xl z-1 font-bold underline decoration-(--color-accent) decoration-2 underline-offset-4 mb-2 md:mb-4">
+                Technical Overview
+            </h1>
+
+            <p class="flex text-xs md:text-sm md:leading-relaxed text-start">
+                Using a high-contrast palette and modern frameworks to ensure that content remains the protagonist. Every line of code is optimized for performance and accessibility.
+            </p>
+
 			<div class="space-y-4">
 				<div class="flex items-center gap-4">
 					<div class="h-2 w-2 rounded-full bg-(--color-primary)"></div>
@@ -33,24 +38,27 @@
 				</div>
 			</div>
 		</div>
-		<div class="aspect-square bg-(--color-secondary) opacity-10 rounded-full border-12 border-(--color-primary) flex items-center justify-center">
-			<span class="text-(--color-primary) font-black text-9xl">A</span>
+		<div class="aspect-square bg-(--color-primary) rounded-full border-12 border-(--color-secondary) flex items-center justify-center">
+			<span class="text-(--color-accent) font-black text-9xl">A</span>
 		</div>
 	</section>
 
 	<hr class="border-(--color-secondary) border-2" />
 
-	<section class="grid h-full grid-cols-1 lg:grid-cols-2 py-10 gap-2 md:gap-20 items-center justify-center">
-		<div class="flex flex-col justify-center space-y-6">
-			<span class="text-xs font-bold uppercase tracking-[0.5em] text-(--color-primary)">Brand Typography</span>
-			<div class="space-y-4">
-				<h3 class="text-4xl md:text-7xl font-medium tracking-tighter">Epic pro</h3>
-				<p class="text-(--color-secondary) text-sm md:text-xl font-light leading-relaxed wrap-anywhere">
-					Modern, clean, and highly legible across all devices. 
-					ABCDEFGHIJKLMNOPQRSTUVWXYZ 
-					1234567890
-				</p>
-			</div>
+	<section class="grid h-full grid-cols-1 lg:grid-cols-2 py-10 gap-2 md:gap-20 text-(--color-accent) items-center justify-center">
+		<div class="flex flex-col justify-center">
+			<p class="text-xs text-(--color-primary) md:text-sm xl:text-base 2xl:text-lg font-light tracking-[0.5em]">
+                ¬Typography 
+            </p>
+            <h1 class="text-xl lg:text-3xl xl:text-6xl z-1 font-bold underline decoration-(--color-accent) decoration-2 underline-offset-4 mb-2 md:mb-4">
+                SpaceGrotesk-Bold
+            </h1>
+
+            <p class="flex text-xs md:text-sm md:leading-relaxed text-start">
+                Modern, clean, and highly legible across all devices. 
+				ABCDEFGHIJKLMNOPQRSTUVWXYZ 
+				1234567890
+            </p>
 		</div>
 
 		<div class="grid grid-cols-2 gap-6 pb-10 md:pb-0 md:gap-12">
