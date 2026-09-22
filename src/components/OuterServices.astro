@@ -1,9 +1,13 @@
+---
+import background from "../images/background.webp";
+---
+
 <section id="outerServices" class="bg-(--color-primary) flex flex-col-reverse md:flex-row items-center justify-center py-12 gap-8 ">
     <!-- Text -->
     <div class="w-1/2 text-center md:text-left">
-        <h2 class="text-4xl font-bold text-(--color-secondary) mb-4">Our Services</h2>
+        <h2 class="text-4xl font-bold text-(--color-accent) mb-4">Nuestros Servicios</h2>
         <p class="text-base text-(--color-background) leading-relaxed">
-            We provide modern digital solutions tailored to your needs. From web development to UX/UI design, our team is ready to help you turn your ideas into reality.
+            Proporcionamos soluciones digitales modernas adaptadas a tus necesidades. Desde el desarrollo web hasta el diseño de UX/UI, nuestro equipo está listo para ayudarte a convertir tus ideas en realidad.
         </p>
     </div>
 
@@ -11,23 +15,23 @@
     <div class="relative flex justify-center ">
         <!-- Image 1 -->
         <img 
-            src="../image2.webp" 
+            src={background.src} 
             alt="Team member 1"
-            class="w-32 h-32 md:w-40 md:h-40 rounded-full border-6 border-(--color-secondary) shadow-lg relative z-30"
+            class="w-32 h-32 md:w-40 md:h-40 rounded-full shadow-lg relative z-30"
         />
     
         <!-- Image 2 -->
         <img
-            src="../image4.webp"
+            src={background.src}
             alt="Team member 2"
-            class="w-32 h-32 md:w-40 md:h-40 rounded-full border-6 border-(--color-secondary) shadow-lg -ml-10 md:-ml-14 relative z-20"
+            class="w-32 h-32 md:w-40 md:h-40 rounded-full shadow-lg -ml-10 md:-ml-14 relative z-20"
         />
     
         <!-- Image 3 -->
         <img
-            src="../image5.webp"
+            src={background.src}
             alt="Team member 3"
-            class="w-32 h-32 md:w-40 md:h-40 rounded-full border-6 border-(--color-secondary) shadow-lg -ml-10 md:-ml-14 relative z-10"
+            class="w-32 h-32 md:w-40 md:h-40 rounded-full shadow-lg -ml-10 md:-ml-14 relative z-10"
         />
     </div>
   </section>

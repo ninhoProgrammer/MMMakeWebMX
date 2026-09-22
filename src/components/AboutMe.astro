@@ -1,3 +1,7 @@
+---
+import astroFrontComplete from "../images/astro-front-complete.webp";
+---
+
 <section class="flex grow flex-col items-center text-(--color-accent) ">
     <div class="h-full md:h-screen mt-10 flex flex-col-reverse md:grid md:grid-cols-2 gap-2 md:gap-4 items-center justify-center px-12 md:px-24 xl:px-48">
       <!-- TEXTO -->
@@ -6,32 +10,31 @@
                 ¬Imaginativos 
             </p>
             <h1 class="text-xl md:text-3xl xl:text-6xl z-1 font-bold underline decoration-(--color-accent) decoration-2 underline-offset-4 ">
-                Imagination Page is created.
+                MM-Make Web es creativa.
             </h1>
 
-            <p class="mt-1 text-xs md:text-base xl:text-lg font-light leading-relaxed">
-                This is a description of the page, it can be a bit longer 
-                to give more information about the content and purpose of the page.   
+            <p class="mt-1 text-sm md:text-xs xl:text-[14px] font-light leading-relaxed">
+               MM-make web es un proyecto de desarrollo web utilizando Astro y Tailwind CSS. La estructura del proyecto está organizada en componentes reutilizables, lo que facilita el mantenimiento y la escalabilidad del código. Tailwind CSS proporciona una forma eficiente de aplicar estilos mediante clases utilitarias, lo que permite un diseño rápido y consistente en toda la aplicación.
             </p>
             <div class="bg-(--color-accent) rounded-lg px-2 my-2" >
                 <p class="text-(--color-primary) font-semibold tracking-widest text-sm mt-1">
-                    Imagination page is:
+                    MM-Make Web es:
                 </p>
 
                 <h2 class="text-4xl md:text-5xl font-bold text-(--color-primary)">
-                    Creation and <span class="text-(--color-background) underline decoration-(--color-primary) decoration-2 underline-offset-4">innovation</span>.
+                    Creativa e <span class="text-(--color-background) underline decoration-(--color-primary) decoration-2 underline-offset-4">innovadora</span>.
                 </h2>
             </div>
 
             <hr class="relative flex w-full flex-wrap border-(--color-secondary) border-2 my-1" />
             
             <p class="text-base">
-                this is a description of the page
+                This is a description of the page
             </p>
 
             <!-- INFO -->
             <div class="grid grid-cols-2 gap-2 text-[10px]">
-                <p><strong>name:</strong> Imagination Page</p>
+                <p><strong>name:</strong> MM-Make Web</p>
                 <p><strong>creator:</strong> Mario Hernandez</p>
                 <p><strong>tecnology:</strong> Astro and tailwind</p>
                 <p><strong>creation:</strong> 2026</p>
@@ -59,7 +62,7 @@
 
             <!-- IMAGEN PRINCIPAL -->
             <img 
-                src="src/images/astro-front-complete.webp" 
+                src={astroFrontComplete.src} 
                 alt="avatar"
                 class="relative w-56 md:w-72 z-10"
             />
@@ -69,7 +72,7 @@
 
     <div class="h-screen md:h-auto w-full bg-(--color-background) text-(--color-accent) items-center px-12 md:px-24 xl:px-48">
         <!-- Left Info Panel -->
-        <h2 class="text-xl md:text-3xl font-bold my-10 md:my-5 text-center">Contact Information</h2>
+        <h2 class="text-xl md:text-3xl font-bold my-10 md:my-5 text-center">Contacto</h2>
 
         <div class="grid md:grid-cols-4 h-full rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none  text-center shadow-lg z-0 hover:shadow-2xl">
             
@@ -79,7 +82,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0zM15 11a3 3 0 11-6 0 3 3 0 016 0z" />     
                 </svg>
                 <div>
-                    <h3 class="text-base md:text-xl font-bold mb-1">Location</h3>
+                    <h3 class="text-base md:text-xl font-bold mb-1">Ubicación</h3>
                     <p class="text-sm md:text-base">
                         123 Main Street, City, Country
                     </p>
@@ -92,7 +95,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2v-6m-4-4l4 4m0 0l-4 4m4-4H8" />
                 </svg>
                 <div>
-                    <h3 class="text-base md:text-xl font-bold mb-1">Email Us</h3>
+                    <h3 class="text-base md:text-xl font-bold mb-1">Email</h3>
                     <p class="text-sm md:text-base">
                         Email us at<br />
                     </p>
@@ -108,7 +111,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3l2 4H7v6h2l-2 4H5a2 2 0 01-2-2V5z" />
                 </svg>
                 <div>
-                    <h3 class="text-base md:text-xl font-bold mb-1">Call Us</h3>
+                    <h3 class="text-base md:text-xl font-bold mb-1">Llámanos</h3>
                     <p class="text-sm md:text-base">
                         +1 (555) 123-4567
                     </p>
@@ -121,10 +124,10 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3M12 2a10 10 0 110 20 10 10 0 010-20z" />
                 </svg>
                 <div>
-                    <h3 class="text-base md:text-xl font-bold mb-1">Working Hours</h3>
+                    <h3 class="text-base md:text-xl font-bold mb-1">Horario de Trabajo</h3>
                     <p class="text-sm md:text-base">
-                        Mon - Fri: 9am - 6pm<br />
-                        Sat, Sun: Closed
+                        Lunes - Viernes: 9am - 6pm<br />
+                        Sábado, Domingo: Cerrado
                     </p>
                 </div>
             </div>
