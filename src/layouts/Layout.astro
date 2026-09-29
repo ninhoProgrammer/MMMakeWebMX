@@ -1,6 +1,6 @@
 ---
-import Header from '../components/Header.astro';
-import Loading from '../components/Loading.astro';
+import Header from '@/components/Header.astro';
+import Loading from '@/components/Loading.astro';
 import "../styles/global.css";
 ---
 <!doctype html>
@@ -19,6 +19,32 @@ import "../styles/global.css";
 		<slot />
 	</body>
 </html>
+
+<script>
+    import { $ } from "@/lib/dom"
+    import { gsap, prefersReducedMotion  } from "@/lib/gsap"
+    import { markLoadingDone, markLoadingReady } from "@/lib/loading"
+    
+    window.addEventListener('load', () => {
+        document.body.classList.add('overflow-hidden');
+        const loadingScreen = document.getElementById('loading-screen');
+
+        if (!loadingScreen) return;
+
+        window.setTimeout(() => {
+            loadingScreen.classList.add('is-loaded');
+            document.body.classList.remove('booting');
+            document.body.classList.add('is-booted');
+            document.body.removeAttribute('aria-busy');
+            document.body.classList.remove('overflow-hidden');
+            loadingScreen.addEventListener('transitionend', () => loadingScreen.remove(), { once: true });
+        }, 5000);
+
+        const loadingBar = (value: number) => {
+            
+        };
+    });
+</script>
 
 
 <style is:global>
@@ -208,19 +234,3 @@ import "../styles/global.css";
         }
     }
 </style>
-
-<script>
-    window.addEventListener('load', () => {
-        const loadingScreen = document.getElementById('loading-screen');
-
-        if (!loadingScreen) return;
-
-        window.setTimeout(() => {
-            loadingScreen.classList.add('is-loaded');
-            document.body.classList.remove('booting');
-            document.body.classList.add('is-booted');
-            document.body.removeAttribute('aria-busy');
-            loadingScreen.addEventListener('transitionend', () => loadingScreen.remove(), { once: true });
-        }, 5000);
-    });
-</script>
